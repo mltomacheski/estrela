@@ -104,6 +104,109 @@ public class Veiculo {
         return true;
     }
 
+    // package com.ejcar.modelo;
+
+    // public class Veiculo {
+        
+    //     public String placa;
+    //     public String modelo;
+    //     public String ano; 
+    //     public String cor; 
+    //     public String chassi;
+    
+    //     @Deprecated
+    //     public Veiculo() {
+    //     }
+    // // =================================
+    //     public Veiculo(String placa) {
+    //         this.setPlaca(placa);
+    //     }
+    // // =================================
+    
+    //     public String getPlaca() {
+    //         return placa;
+    //     }
+    
+    //     public void setPlaca(String placa) {
+    //        if(placa == "0000000"){
+    //             System.out.println("Essa placa não pode ser cadastrada ");
+    //        }else {
+    //             System.out.println("É possivel cadastrar essa placa");
+    //             this.placa = placa;
+    //        }
+    //     }
+    
+    //     public String getModelo() {
+    //         return modelo;
+    //     }
+    
+    //     public void setModelo(String modelo) {
+    //         if(modelo == "Perca total"){
+    //             System.out.println("Infelizmente não podemos te ajudar com esse problema ");
+    //        }else {
+    //             System.out.println("É possivel consertar o seu veiculo");
+    //             this.modelo = modelo;
+    //        }
+    //     }
+    
+    //     public String getAno() {
+    //         return ano;
+    //     }
+    
+    //     public void setAno(String ano) {
+    //         if(ano == "0000"){
+    //             System.out.println("O Ano digitado não é válido ");
+    //        }else {
+    //             System.out.println("É possivel cadastrar o ano digitado ");
+    //             this.ano = ano;
+    //        }
+    //     }
+    
+    //     public String getCor() {
+    //         return cor;
+    //     }
+    
+    //     public void setCor(String cor) {
+    //         if(cor == "Invisivel"){
+    //             System.out.println("Não podemos cadastrar uma cor inexistente  ");
+    //        }else {
+    //             System.out.println("É possivel cadastrar a cor escolhida  ");
+    //             this.cor = cor;
+    //        }
+    //     }
+    
+    //     public String getChassi() {
+    //         return chassi;
+    //     }
+    
+    //     public void setChassi(String chassi) {
+    //         // chassi <=17  condição errada 
+    //         if(chassi.length() != 17 ){
+    //             System.out.println("A chassi não pode ser cadastrada");
+    //        }else {
+    //             System.out.println("É possivel cadastrar a chassi digitada ");
+    //             this.chassi = chassi;
+    //        }
+    //     }
+    
+    //     @Override
+    //     public String toString() {
+    //         return "Placa Do Veiculo =" + placa + "  Modelo Do Veiculo = " +
+    //         modelo + "  Ano Do Veiculo = " + ano+ "  Cor Do Veiculo = " + 
+    //         cor + "  Chassi Do Veiculo = " + chassi;
+            
+    //     }
+    
+    //     public void imprimir(){
+    //         System.out.println( this.toString());
+    //     }
+        
+    
+        
+        
+        
+    // }
+    
     
 }
 
