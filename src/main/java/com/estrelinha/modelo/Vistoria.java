@@ -1,3 +1,5 @@
+package com.estrelinha.modelo;
+
 public class Vistoria{
     private String entrada;
     private String saida;
