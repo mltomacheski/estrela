@@ -1,4 +1,4 @@
-package com.ejcar.modelo;
+package com.estrelinha.modelo;
 
 public class Agendamento {
     private String dataEntrada;

@@ -1,3 +1,5 @@
+package com.estrelinha.modelo;
+
 public class Peca {
 
     private String nome;

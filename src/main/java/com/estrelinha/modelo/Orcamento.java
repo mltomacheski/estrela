@@ -1,3 +1,5 @@
+package com.estrelinha.modelo;
+
 public class Orcamento {
 
     private Peca peca;
