@@ -3,6 +3,10 @@ package com.estrelinha;
 import java.sql.Connection;
 
 import com.estrelinha.conexao.Conexao;
+import com.estrelinha.dao.VeiculoDao;
+import com.estrelinha.modelo.Veiculo;
+import com.estrelinha.pojo.VeiculoPojo;
+
 
 /**
  * Hello world!
@@ -14,6 +18,19 @@ public class App
     {
         // Conexao conexao = new Conexao();
         //conexao.getConexao();
+
+        Veiculo veiculo = new Veiculo("1546fgd", "","2019","", "ssugifygiYG");
+
+        VeiculoPojo veiculoPojo = new VeiculoPojo(
+            veiculo.getPlaca(), 
+            veiculo.getModelo(),
+            veiculo.getAno(), 
+            veiculo.getCor(),
+            veiculo.getChassi()
+            );
+
+        VeiculoDao veiculoDao = new VeiculoDao();
+
     }
 
 //     package com.ejcar;

@@ -26,12 +26,21 @@ public class VeiculoDao {
             //Pegar uma conexão e preparar a sql
             ps = conexao.getConexao().prepareStatement(sqlInsert);
 
-            ps.setString(1, veiculoPojo.getPlaca());
 
+            //Setar a informação no ps. Pego a informação do Pojo
+            ps.setString(1, veiculoPojo.getPlaca());
+            ps.setString(2, veiculoPojo.getAno());
+            ps.setString(3, veiculoPojo.getChassi());
+
+            ps.execute();
+            ps.close();
+
+            System.out.println("Conseguimos cadastar o veículo");
 
         } catch (SQLException e) {
             // Lança um erro (imprimir)
             e.printStackTrace();
+            System.out.println("NÃO GRAVOU !!!!!!!!");
         }
 
     }
