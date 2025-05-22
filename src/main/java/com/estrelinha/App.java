@@ -9,7 +9,9 @@ import com.estrelinha.modelo.Material;
 import com.estrelinha.modelo.Peca;
 import com.estrelinha.pojo.PecaPojo;
 import com.estrelinha.pojo.MaterialPojo;
-
+import com.estrelinha.dao.VeiculoDao;
+import com.estrelinha.modelo.Veiculo;
+import com.estrelinha.pojo.VeiculoPojo;
 /**
  * Hello world!
  *
@@ -33,6 +35,20 @@ public class App
 
         pecaDao.cadastrarPeca(pecaPojo);
         materialDao.cadastrarMaterial(materialPojo);
+        // Conexao conexao = new Conexao();
+        //conexao.getConexao();
+
+        Veiculo veiculo = new Veiculo("1546fgd", "","2019","", "ssugifygiYG");
+
+        VeiculoPojo veiculoPojo = new VeiculoPojo(
+            veiculo.getPlaca(), 
+            veiculo.getModelo(),
+            veiculo.getAno(), 
+            veiculo.getCor(),
+            veiculo.getChassi()
+            );
+
+        VeiculoDao veiculoDao = new VeiculoDao();
 
     }
 

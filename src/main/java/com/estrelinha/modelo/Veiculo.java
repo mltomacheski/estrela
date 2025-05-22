@@ -19,6 +19,7 @@ public class Veiculo {
         this.chassi = chassi;
     }
 
+
     public String getPlaca() {
         return placa;
     }
