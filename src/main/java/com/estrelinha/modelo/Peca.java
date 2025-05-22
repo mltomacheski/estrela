@@ -7,6 +7,10 @@ public class Peca {
 
 
     @Deprecated
+    public Peca() {
+    }
+
+
     public Peca(String nome, int quantidade) {
         this.nome = nome;
         this.quantidade = quantidade;

@@ -3,6 +3,12 @@ package com.estrelinha;
 import java.sql.Connection;
 
 import com.estrelinha.conexao.Conexao;
+import com.estrelinha.dao.MaterialDao;
+import com.estrelinha.dao.PecaDao;
+import com.estrelinha.modelo.Material;
+import com.estrelinha.modelo.Peca;
+import com.estrelinha.pojo.PecaPojo;
+import com.estrelinha.pojo.MaterialPojo;
 
 /**
  * Hello world!
@@ -12,9 +18,22 @@ public class App
 {
     public static void main( String[] args )
     {
-        Conexao conexao = new Conexao();
+        //Conexao conexao = new Conexao();
 
-        conexao.getConexao();
+        //conexao.getConexao();
+
+        Peca peca = new Peca("Vela", 19);
+        Material material = new Material("Porta", 16);
+
+        PecaPojo pecaPojo = new PecaPojo(peca.getNome(), peca.getQuantidade());
+        MaterialPojo materialPojo = new MaterialPojo(material.getNome(), material.getQuantidade());
+
+        PecaDao pecaDao = new PecaDao();
+        MaterialDao materialDao = new MaterialDao();
+
+        pecaDao.cadastrarPeca(pecaPojo);
+        materialDao.cadastrarMaterial(materialPojo);
+
     }
 
 //     package com.ejcar;
