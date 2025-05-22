@@ -12,9 +12,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        Conexao conexao = new Conexao();
-
-        conexao.getConexao();
+        // Conexao conexao = new Conexao();
+        //conexao.getConexao();
     }
 
 //     package com.ejcar;
