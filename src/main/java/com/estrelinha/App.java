@@ -19,8 +19,8 @@ public class App
         // Conexao conexao = new Conexao();
         //conexao.getConexao();
 
+        /* Para gravar o veiculo
         Veiculo veiculo = new Veiculo("1546fgd", "","2019","", "ssugifygiYG");
-
         VeiculoPojo veiculoPojo = new VeiculoPojo(
             veiculo.getPlaca(), 
             veiculo.getModelo(),
@@ -28,8 +28,15 @@ public class App
             veiculo.getCor(),
             veiculo.getChassi()
             );
+        VeiculoDao veiculoDao = new VeiculoDao();
+        veiculoDao.cadastrarVeiculo(veiculoPojo);*/
+
+        /*Alterar o veiculo  */
+        VeiculoPojo veiculoPojo = new VeiculoPojo("123456", "", "2013","","125478963yyy");
+        veiculoPojo.setId(3);
 
         VeiculoDao veiculoDao = new VeiculoDao();
+        veiculoDao.atualizarVeiculo(veiculoPojo);
 
     }
 

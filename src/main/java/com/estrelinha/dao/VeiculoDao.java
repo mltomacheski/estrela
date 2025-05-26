@@ -25,7 +25,7 @@ public class VeiculoDao {
 
             //Pegar uma conexão e preparar a sql
             ps = conexao.getConexao().prepareStatement(sqlInsert);
-
+           
 
             //Setar a informação no ps. Pego a informação do Pojo
             ps.setString(1, veiculoPojo.getPlaca());
@@ -43,6 +43,39 @@ public class VeiculoDao {
             System.out.println("NÃO GRAVOU !!!!!!!!");
         }
 
+    }
+
+    ///===================================================================
+
+    public void atualizarVeiculo(VeiculoPojo veiculoPojo) {
+
+        Conexao conexao = new Conexao();
+
+        String sqlUpdate = "update veiculo set placa = ?, ano = ?, chassi = ? where id = ?";
+
+        PreparedStatement ps = null;
+
+        try {
+
+            //Pegar uma conexão e preparar a sql
+            ps = conexao.getConexao().prepareStatement(sqlUpdate);
+
+            //Setar a informação no ps. Pego a informação do Pojo
+            ps.setString(1, veiculoPojo.getPlaca());
+            ps.setString(2, veiculoPojo.getAno());
+            ps.setString(3, veiculoPojo.getChassi());
+            ps.setInt(4, veiculoPojo.getId());
+
+            ps.execute();
+            ps.close();
+
+            System.out.println("Conseguimos alterar o veículo");
+
+        } catch (SQLException e) {
+            // Lança um erro (imprimir)
+            e.printStackTrace();
+            System.out.println("NÃO ALTEROUU !!!!!!!!");
+        }
     }
 
 }

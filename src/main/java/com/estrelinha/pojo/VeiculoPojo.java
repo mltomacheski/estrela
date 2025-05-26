@@ -2,6 +2,7 @@ package com.estrelinha.pojo;
 
 public class VeiculoPojo {
     
+    private int id;
     public String placa;
     public String modelo;
     public String ano; 
@@ -21,7 +22,7 @@ public class VeiculoPojo {
         this.chassi = chassi;
     }
 
-
+    
     public String getPlaca() {
         return placa;
     }
@@ -70,4 +71,15 @@ public class VeiculoPojo {
     public void setChassi(String chassi) {
         this.chassi = chassi;
     }
+
+
+    public int getId() {
+        return id;
+    }
+
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
+
