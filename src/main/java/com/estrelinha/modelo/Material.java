@@ -5,8 +5,12 @@ public class Material {
     private String nome;
     private int quantidade;
 
-
+    
     @Deprecated
+    public Material() {
+    }
+
+
     public Material(String nome, int quantidade) {
         this.nome = nome;
         this.quantidade = quantidade;
